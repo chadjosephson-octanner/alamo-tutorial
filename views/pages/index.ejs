@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/lang-logo.png">
+    </a>
+    <h1>Getting Started with Node at OC Tanner</h1>
+    <p>This is a sample Node application. It's a reasonably simple app - but a good foundation for understanding how to get the most out our platform.</p>
+  </div>
+</div>
+<div class="container">
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
+      <ul>
+        <li>This app was auto-deployed when you commited changes into github. Branches map to the environment where code will be deployed.</li>
+        <li>When Heroku received the source code, it fetched all the dependencies in the package.json, creating a deployable slug.</li>
+        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
+        <li>You can scale your app, manage it, and configure 150+ addons at <a href="https://status.appreciatehub.com/apps">appreciatekit</a>.</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
+      <ul>
+        <li>Find out more about your app at <a href="https://status.appreciatehub.com/apps">appreciatekit</a></li>
+        <li>Configure the appreciatekit command line, find out more on the <a href="https://status.appreciatehub.com/account.html">appreciatekit account page</a>.</li>
+        <li>Go to github and review your code, the branches created and more.</a>.</li>
+      </ul>
+      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
+      <ul>
+        <li><a href="https://www.nodejs.org">Node</a></li>
+        <li><a href="https://www.npmjs.org">NPM</a></li>
+        <li><a href="https://github.com/octanner">OC Tanner Github</a></li>
+        <li><a href="https://status.appreciatekit.com/apps">AppreciateKit</a></li>
+        <li><a href="https://status.appreciatekit.com/account.html">AppreciateKit Account</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
+        <li><a href="https://devcenter.heroku.com/articles/deploying-nodejs">Deploying Node Apps on Heroku</a></li>
+      </ul>
+    </div>
+  </div> <!-- row -->
+</div>
+
+
+</body>
+</html>
