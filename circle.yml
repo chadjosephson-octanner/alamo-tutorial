@@ -1,0 +1,22 @@
+machine:
+  pre:
+    - heroku plugins:install https://github.com/glenngillen/heroku-exit-status.git
+
+test:
+  override:
+    - node test/index.js
+
+#deployment:
+#  development:
+#    branch: dev
+#    heroku:
+#      appname: oc-<APP_NAME_HERE>-prod
+#  staging:
+#    branch: qa
+#    heroku:
+#      appname: oc-<APP_NAME_HERE>-prod
+#
+#  production:
+#    branch: master
+#    heroku:
+#      appname: oc-<APP_NAME_HERE>-prod
