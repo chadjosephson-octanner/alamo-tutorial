@@ -8,7 +8,7 @@ Place your description here, what does this app do?
 
 ## Building
 
-Make sure you have [Node.js](http://nodejs.org/) v4 or above installed.  Also, install appkit from https://status.appreciatehub.com/account.html.
+Make sure you have [Node.js](http://nodejs.org/) v4 or above installed. 
 
 ```sh
 $ git clone https://github.com/octanner/your-repo-name.git
@@ -25,23 +25,10 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 $ npm test
 ```
 
-Or, for code coverage
+Or, for code coverage, get your codacy project token and run:
 
 ```sh
-$ npm coverage
+$ CODACY_PROJECT_TOKEN=... npm coverage
 ```
 
-## Workflow
-
-```sh
-$ git checkout -b 'some-feature-branch'
-$ ... your work ...
-$ git push
-```
-
-Submit a PR into master, then merge into qa, etc. All code is auto-deployed upon a merge.
-
-## Documentation
-
-See [localhost:9000/docs](http://localhost:5000/docs) for auto-generated swagger information.
-
+The output report will be in ./coverage/ directory
